@@ -166,6 +166,10 @@
 // 12.  convert array to object
 // ****************************
 // const arr = ["a", "b", "c"];
+// 1st way
+// const obj = Object.fromEntries(arr.map((ele, index) => [ele, index]));
+// console.log(obj);
+// 2nd way
 // const obj = arr.reduce((acc, value, index) => {
 //   acc[index] = value;
 //   return acc;
