@@ -474,3 +474,26 @@
 //   }
 //   let str = "aaaaabbbbbcccaaa";
 //   console.log(findConsecutive(str));
+
+// ****************************
+// 28. given an array of strings, and we need to find all the strings that are substrings of another string in the array
+// ****************************
+// function findSubstrings(arr) {
+//     const substrings = new Set();
+
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = 0; j < arr.length; j++) {
+//             if (i !== j && arr[j].includes(arr[i])) {
+//                 substrings.add(arr[i]);
+//                 break; // No need to check further if it's already a substring
+//             }
+//         }
+//     }
+
+//     return Array.from(substrings);
+// }
+
+// // Example usage
+// const arr = ["mass", "as", "hero", "superhero"];
+// const result = findSubstrings(arr);
+// console.log(result); // Output: ['as', 'hero']
