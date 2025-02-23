@@ -556,3 +556,15 @@
 // }
 // let arr = [1, 2, 3, 6];
 // console.log(findMissing(arr));
+
+// ****************************
+// 31. swap first & last character of string
+// ****************************
+// function swap(value) {
+//   const length = value.length;
+//   const swaped =
+//     value.charAt(length - 1) + value.substring(1, length - 1) + value.charAt(0);
+//   return swaped;
+// }
+// const str = "hello";
+// console.log(swap(str));
