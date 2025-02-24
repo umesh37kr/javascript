@@ -539,3 +539,20 @@
 // }
 // const arr = [1, 3, 2, 4, 6];
 // console.log(longestAcending(arr));
+
+// ****************************
+// 30. find missing number from array
+// ****************************
+// function findMissing(arr) {
+//   const min = Math.min(...arr);
+//   const max = Math.max(...arr);
+//   let missing = [];
+//   for (let i = min; i <= max; i++) {
+//     if (arr.indexOf(i) < 0) {
+//       missing.push(i);
+//     }
+//   }
+//   return missing;
+// }
+// let arr = [1, 2, 3, 6];
+// console.log(findMissing(arr));
