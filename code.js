@@ -497,3 +497,45 @@
 // const arr = ["mass", "as", "hero", "superhero"];
 // const result = findSubstrings(arr);
 // console.log(result); // Output: ['as', 'hero']
+
+// ****************************
+// 29. JavaScript code to find the longest ascending length in an array:
+// ****************************
+// function longestAscendingLength(arr) {
+//     if (arr.length === 0) return 0;
+//     let maxLength = 1;
+//     let currentLength = 1;
+//     for (let i = 1; i < arr.length; i++) {
+//       if (arr[i] > arr[i - 1]) {
+//         currentLength++;
+//       } else {
+//         maxLength = Math.max(maxLength, currentLength);
+//         currentLength = 1; // Reset for the next sequence
+//       }
+//     }
+//     // Final update in case the longest sequence ends at the last element
+//     maxLength = Math.max(maxLength, currentLength);
+//     return maxLength;
+//   }
+//   // Test the function
+//   const arr = [1, 3, 2, 4, 6];
+//   console.log(longestAscendingLength(arr)); // Output: 3
+
+// another way
+// function longestAcending(arr) {
+//   let currentlength = 1;
+//   let maxLength = 1;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] < arr[i + 1]) {
+//       currentlength++;
+//     } else {
+//       if (currentlength > maxLength) {
+//         maxLength = currentlength;
+//       }
+//       currentlength = 1;
+//     }
+//   }
+//   return maxLength;
+// }
+// const arr = [1, 3, 2, 4, 6];
+// console.log(longestAcending(arr));
