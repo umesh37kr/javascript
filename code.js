@@ -568,3 +568,26 @@
 // }
 // const str = "hello";
 // console.log(swap(str));
+
+// ****************************
+// 32. count number of each new fruit
+// ****************************
+function countFruit(fruit) {
+  const countedFruit = {};
+  fruit.forEach((ele) => {
+    for (each in ele) {
+      if (countedFruit[each]) {
+        countedFruit[each] = countedFruit[each] + ele[each];
+      } else {
+        countedFruit[each] = ele[each];
+      }
+    }
+  });
+  return countedFruit;
+}
+const fruit = [
+  { Apple: 4, Orange: 7, Grape: 3 },
+  { Guava: 6, Lemoan: 4, Banana: 8 },
+  { Orange: 5, Banana: 7, Apple: 7 },
+];
+console.log(countFruit(fruit));
