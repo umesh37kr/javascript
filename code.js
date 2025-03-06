@@ -572,22 +572,41 @@
 // ****************************
 // 32. count number of each new fruit
 // ****************************
-function countFruit(fruit) {
-  const countedFruit = {};
-  fruit.forEach((ele) => {
-    for (each in ele) {
-      if (countedFruit[each]) {
-        countedFruit[each] = countedFruit[each] + ele[each];
-      } else {
-        countedFruit[each] = ele[each];
-      }
-    }
-  });
-  return countedFruit;
-}
-const fruit = [
-  { Apple: 4, Orange: 7, Grape: 3 },
-  { Guava: 6, Lemoan: 4, Banana: 8 },
-  { Orange: 5, Banana: 7, Apple: 7 },
-];
-console.log(countFruit(fruit));
+// function countFruit(fruit) {
+//   const countedFruit = {};
+//   fruit.forEach((ele) => {
+//     for (each in ele) {
+//       if (countedFruit[each]) {
+//         countedFruit[each] = countedFruit[each] + ele[each];
+//       } else {
+//         countedFruit[each] = ele[each];
+//       }
+//     }
+//   });
+//   return countedFruit;
+// }
+// const fruit = [
+//   { Apple: 4, Orange: 7, Grape: 3 },
+//   { Guava: 6, Lemoan: 4, Banana: 8 },
+//   { Orange: 5, Banana: 7, Apple: 7 },
+// ];
+// console.log(countFruit(fruit));
+
+// ****************************
+// 33. count the occurrences of characters in a string and format the output as required ("3a2b1c" for "aaabbc"):
+// ****************************
+// function countChar(str) {
+//   let result = "";
+//   let count = 1;
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === str[i + 1]) {
+//       count++;
+//     } else {
+//       result += count + str[i];
+//       count = 1;
+//     }
+//   }
+//   return result;
+// }
+// let str = "aaabbc"; //op- 3a2b1c
+// console.log(countChar(str));
