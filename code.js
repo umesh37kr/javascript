@@ -385,24 +385,6 @@
 // let result = nestedArray.flat(Infinity);
 // console.log(result);
 
-// 3rd way Non-Recursive Flattening:
-// const nestedArray = [1, [2, 3], 4, [5, 6, [7, 8]]];
-// function flattenArray() {
-//   let stack = [nestedArray];
-//   let flatArray = [];
-//   while (stack.length > 0) {
-//     const element = stack.pop();
-//     // console.log(element);
-//     if (Array.isArray(element)) {
-//       stack.push(...element);
-//     } else {
-//       flatArray.push(element);
-//     }
-//   }
-//   return flatArray.reverse();
-// }
-// console.log(flattenArray(nestedArray));
-
 // ****************************
 // 25. Write a JavaScript function that directs whether the given strings are anagrams
 // ****************************
