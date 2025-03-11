@@ -10,3 +10,16 @@
 //   },
 // };
 // obj.firstFn();
+
+// ****************************
+// 2.
+// ****************************
+// console.log(typeof undefined);
+// console.log(typeof null);
+
+// ****************************
+// 3.
+// ****************************
+// const a = null;
+// const value = a || "Default value";
+// console.log(value);

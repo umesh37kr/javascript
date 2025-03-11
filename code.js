@@ -523,7 +523,7 @@
 // console.log(longestAcending(arr));
 
 // ****************************
-// 30. find missing number from array
+// 30. find missing number from array "(input- [1, 2, 3, 6], ouput- [4, 5])"
 // ****************************
 // function findMissing(arr) {
 //   const min = Math.min(...arr);
@@ -540,7 +540,7 @@
 // console.log(findMissing(arr));
 
 // ****************************
-// 31. swap first & last character of string
+// 31. swap first & last character of string "(input- hello, ouput- oellh)"
 // ****************************
 // function swap(value) {
 //   const length = value.length;
@@ -592,3 +592,11 @@
 // }
 // let str = "aaabbc"; //op- 3a2b1c
 // console.log(countChar(str));
+
+// ****************************
+// 34. swap 2 variable without Temp
+// ****************************
+// let a = 5,
+//   b = 10;
+// [a, b] = [b, a];
+// console.log(`a = ${a}, b = ${b}`);
