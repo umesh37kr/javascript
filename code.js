@@ -603,3 +603,14 @@
 //   b = 10;
 // [a, b] = [b, a];
 // console.log(`a = ${a}, b = ${b}`);
+
+// ****************************
+// 35. code to reverse a string using recursion "(input- hello, ouput- olleh)"
+// ****************************
+// function reverseString(str) {
+//     if (str === "") {
+//       return "";
+//     }
+//     return reverseString(str.substring(1)) + str[0];
+//   }
+//   console.log(reverseString("hello"));
