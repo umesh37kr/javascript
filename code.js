@@ -429,6 +429,7 @@
 
 // ****************************
 // 27. find the maximum count of consecutive same characters in the given string
+// "(input- aaaabbcaaa, ouput- 4a)"
 // ****************************
 // function findConsecutive(input) {
 //     let maxChar = "";
@@ -459,6 +460,7 @@
 
 // ****************************
 // 28. given an array of strings, and we need to find all the strings that are substrings of another string in the array
+// "(input- ["mass", "as", "hero", "superhero"], ouput- ['as', 'hero'])"
 // ****************************
 // function findSubstrings(arr) {
 //     const substrings = new Set();
@@ -482,6 +484,7 @@
 
 // ****************************
 // 29. JavaScript code to find the longest ascending length in an array:
+// "(input- [1, 3, 2, 4, 6], ouput- 3)"
 // ****************************
 // function longestAscendingLength(arr) {
 //     if (arr.length === 0) return 0;
