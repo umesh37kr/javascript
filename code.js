@@ -614,3 +614,22 @@
 //     return reverseString(str.substring(1)) + str[0];
 //   }
 //   console.log(reverseString("hello"));
+
+// ****************************
+// 36. mongodb database connection in nodejs
+// ****************************
+// import mongoose from "mongoose";
+// const MONGO_URI = "mongodb://localhost:27017/mydatabase";
+// const connectDB = async () => {
+//   try {
+//     await mongoose.connect(MONGO_URI, () => {
+//       useNewUrlParser: true;
+//       useUnifiedTopology: true;
+//     });
+//     console.log("Mongodb connected succesfully");
+//   } catch (error) {
+//     console.log("mongodb connection error", error);
+//     process.exit(1);
+//   }
+// };
+// connectDB();
