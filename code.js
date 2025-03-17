@@ -633,3 +633,23 @@
 //   }
 // };
 // connectDB();
+
+// ****************************
+// 38. JavaScript function to find the first non-duplicate element in an array
+// "(input- [4, 5, 1, 2, 0, 4, 5, 2], ouput- 1)"
+// ****************************
+// function firstNonDuplicate() {
+//     const countMap = new Map();
+//     for (let num of arr) {
+//       countMap.set(num, (countMap.get(num) || 0) + 1);
+//     }
+//     // find the first element with count 1
+//     for (let num of arr) {
+//       if (countMap.get(num) === 1) {
+//         return num;
+//       }
+//     }
+//     return null; // Return null if no unique element is found
+//   }
+//   let arr = [4, 5, 1, 2, 0, 4, 5, 2];
+//   console.log(firstNonDuplicate(arr));
