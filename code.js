@@ -653,3 +653,20 @@
 //   }
 //   let arr = [4, 5, 1, 2, 0, 4, 5, 2];
 //   console.log(firstNonDuplicate(arr));
+
+// ****************************
+// 39. JavaScript program that takes the input "Selva" and produces the output "S-Ee-Lll-Vvvv-Aaaaa"
+// ****************************
+// function transformString(input) {
+//     let result = []; 
+//     for (let i = 0; i < input.length; i++) {
+//       const first = input[i].toUpperCase();
+//       const rest = input[i].repeat(i);
+//       result.push(first + rest);
+//     } 
+//     return result.join("-");
+//   }
+//   // Example usage
+//   const input = "Selva";
+//   const output = transformString(input);
+//   console.log(output); // S-Ee-Lll-Vvvv-Aaaaa
