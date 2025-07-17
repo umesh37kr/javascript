@@ -670,3 +670,18 @@
 //   const input = "Selva";
 //   const output = transformString(input);
 //   console.log(output); // S-Ee-Lll-Vvvv-Aaaaa
+
+/**  
+     *****************************
+    40. javascript program to split Array into Chunks of Given Size
+        Input: ([1,2,3,4,5], 2) Output: [[1,2],[3,4],[5]]
+    ****************************
+ */
+// function chunkArray(arr, size) {
+//     let result = []
+//     for(let i = 0; i< arr.length; i += size){
+//         result.push(arr.slice(i, i+size))
+//     }
+//     return result
+//  }
+//  console.log(chunkArray([1,2,3,4,5], 2))
