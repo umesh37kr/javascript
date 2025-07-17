@@ -685,3 +685,40 @@
 //     return result
 //  }
 //  console.log(chunkArray([1,2,3,4,5], 2))
+
+/**  
+    *****************************
+    41. Write a function firstNonRepeatingChar(str) that takes a string and returns the first character that does not repeat anywhere in the string. If all characters are repeating, return null.
+        Input: "aabbccddeffg" Output: "e"
+    ****************************
+ */
+// function firstNonRepeatingChar(str) {
+//     const charCount = {};
+//     // Count occurrences of each character
+//     for (const char of str) {
+//         charCount[char] = (charCount[char] || 0)+1;
+//     }
+//     // Find the first non-repeating character
+//     for (const char of str) {
+//         if (charCount[char] === 1) {
+//             return char;
+//         }
+//     }
+//     return null; // If no non-repeating character is found
+// }
+// console.log(firstNonRepeatingChar("aabbccddeffg")) //➞ "e"
+
+// 2nd way
+// let firstNonRepeatingChar = (str) => {
+//     for(let i =0; i<str.length; i++){
+//         const char = str[i]
+//         if(str.indexOf(char) === str.lastIndexOf(char)){
+//             return char
+//         }
+//     }
+//     return null
+// }
+// console.log(firstNonRepeatingChar("aabbccddeffg")) //➞ "e"
+// console.log(firstNonRepeatingChar("aabbcc")) //➞ null
+// console.log(firstNonRepeatingChar("swiss")) //➞ "w"
+
