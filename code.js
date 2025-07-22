@@ -722,3 +722,25 @@
 // console.log(firstNonRepeatingChar("aabbcc")) //➞ null
 // console.log(firstNonRepeatingChar("swiss")) //➞ "w"
 
+/**  
+    *****************************
+    41. Write a function to find the Most Frequent Character in a String (Input: "javascript",  Output: "a")
+    ****************************
+ */
+// Find the Most Frequent Character in a String (Input: "javascript",  Output: "a")
+// function maxCharacter(str) {
+//     const charMap = {};
+//     let maxChar = '';
+//     let maxCount = 0;
+//     for(let char of str){
+//     charMap[char] = (charMap[char] || 0 ) + 1;
+
+//     if(charMap[char] > maxCount){
+//         maxChar = char;
+//         maxCount =  charMap[char]
+//         }
+//     }
+//     return maxChar
+//  }
+
+// console.log(maxCharacter("javascript"))
