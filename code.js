@@ -724,7 +724,7 @@
 
 /**  
     *****************************
-    41. Write a function to find the Most Frequent Character in a String (Input: "javascript",  Output: "a")
+    42. Write a function to find the Most Frequent Character in a String (Input: "javascript",  Output: "a")
     ****************************
  */
 // Find the Most Frequent Character in a String (Input: "javascript",  Output: "a")
