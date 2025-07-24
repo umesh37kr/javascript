@@ -744,3 +744,34 @@
 //  }
 
 // console.log(maxCharacter("javascript"))
+
+/**  
+    *****************************
+    43. Write a function groupAnagrams(words) that takes an array of strings and groups the anagrams together.
+    Input: ["eat", "tea", "tan", "ate", "nat", "bat"]
+    Output: [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]
+    ****************************
+ */
+// function groupAnagrams(words) {
+//   const map = {};
+
+//   for (const word of words) {
+//     // Sort the word to get the key
+//     const key = word.split('').sort().join('');
+    
+//     // If the key is not in the map, initialize it
+//     if (!map[key]) {
+//       map[key] = [];
+//     }
+
+//     // Push the word into the correct group
+//     map[key].push(word);
+//   }
+
+//   // Return all the grouped values as an array
+//   return Object.values(map);
+// }
+
+// const input = ["eat", "tea", "tan", "ate", "nat", "bat"];
+// const result = groupAnagrams(input);
+// console.log(result);
