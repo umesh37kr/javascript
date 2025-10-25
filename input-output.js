@@ -51,3 +51,27 @@
 // };
 // const historyGrade = student.courses.history?.grade;
 // console.log(historyGrade);
+
+// ****************************
+// 6. what will be the output (a c)
+// ****************************
+// const a = () => console.log("a");
+// const b = () => console.log("b");
+// const c = "c";
+// const d = "d";
+// console.log((a() && b()) || c || d);
+
+// ****************************
+// 7. what will be the output (0 string 1 string 2 string)
+// ****************************
+// const kek = ['a', 'b', 'c'];
+// for(const e in kek){
+//     console.log(e, typeof e)
+// }
+
+// ****************************
+// 8. what will be the output (true true false)
+// ****************************
+// console.log(null === null);
+// console.log(undefined === undefined);
+// console.log(NaN === NaN);

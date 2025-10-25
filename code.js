@@ -653,3 +653,9 @@
 //   }
 //   let arr = [4, 5, 1, 2, 0, 4, 5, 2];
 //   console.log(firstNonDuplicate(arr));
+
+// Given a sorted array arr[] of n numbers and another number target, the task is to check whether or not there exist two elements in arr[] whose sum is exactly target.if present return those elements indexes else return -1. You can assume that each input would have exactly one solution, and you may not use the same element twice.
+
+// 	Examples:
+// arr = [2,6,8,9] , target = 10, output: [0,2]
+// arr = [2,6,8,9] , target = 20, output: -1
