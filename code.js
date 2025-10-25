@@ -654,6 +654,132 @@
 //   let arr = [4, 5, 1, 2, 0, 4, 5, 2];
 //   console.log(firstNonDuplicate(arr));
 
+// ****************************
+// 39. JavaScript program that takes the input "Selva" and produces the output "S-Ee-Lll-Vvvv-Aaaaa"
+// ****************************
+// function transformString(input) {
+//     let result = [];
+//     for (let i = 0; i < input.length; i++) {
+//       const first = input[i].toUpperCase();
+//       const rest = input[i].repeat(i);
+//       result.push(first + rest);
+//     }
+//     return result.join("-");
+//   }
+//   // Example usage
+//   const input = "Selva";
+//   const output = transformString(input);
+//   console.log(output); // S-Ee-Lll-Vvvv-Aaaaa
+
+/**  
+     *****************************
+    40. javascript program to split Array into Chunks of Given Size
+        Input: ([1,2,3,4,5], 2) Output: [[1,2],[3,4],[5]]
+    ****************************
+ */
+// function chunkArray(arr, size) {
+//     let result = []
+//     for(let i = 0; i< arr.length; i += size){
+//         result.push(arr.slice(i, i+size))
+//     }
+//     return result
+//  }
+//  console.log(chunkArray([1,2,3,4,5], 2))
+
+/**  
+    *****************************
+    41. Write a function firstNonRepeatingChar(str) that takes a string and returns the first character that does not repeat anywhere in the string. If all characters are repeating, return null.
+        Input: "aabbccddeffg" Output: "e"
+    ****************************
+ */
+// function firstNonRepeatingChar(str) {
+//     const charCount = {};
+//     // Count occurrences of each character
+//     for (const char of str) {
+//         charCount[char] = (charCount[char] || 0)+1;
+//     }
+//     // Find the first non-repeating character
+//     for (const char of str) {
+//         if (charCount[char] === 1) {
+//             return char;
+//         }
+//     }
+//     return null; // If no non-repeating character is found
+// }
+// console.log(firstNonRepeatingChar("aabbccddeffg")) //➞ "e"
+
+// 2nd way
+// let firstNonRepeatingChar = (str) => {
+//     for(let i =0; i<str.length; i++){
+//         const char = str[i]
+//         if(str.indexOf(char) === str.lastIndexOf(char)){
+//             return char
+//         }
+//     }
+//     return null
+// }
+// console.log(firstNonRepeatingChar("aabbccddeffg")) //➞ "e"
+// console.log(firstNonRepeatingChar("aabbcc")) //➞ null
+// console.log(firstNonRepeatingChar("swiss")) //➞ "w"
+
+/**  
+    *****************************
+    42. Write a function to find the Most Frequent Character in a String (Input: "javascript",  Output: "a")
+    ****************************
+ */
+// function maxCharacter(str) {
+//     const charMap = {};
+//     let maxChar = '';
+//     let maxCount = 0;
+//     for(let char of str){
+//     charMap[char] = (charMap[char] || 0 ) + 1;
+
+//     if(charMap[char] > maxCount){
+//         maxChar = char;
+//         maxCount =  charMap[char]
+//         }
+//     }
+//     return maxChar
+//  }
+
+// console.log(maxCharacter("javascript"))
+
+/**  
+    *****************************
+    43. Write a function groupAnagrams(words) that takes an array of strings and groups the anagrams together.
+    Input: ["eat", "tea", "tan", "ate", "nat", "bat"]
+    Output: [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]
+    ****************************
+ */
+// function groupAnagrams(words) {
+//   const map = {};
+
+//   for (const word of words) {
+//     // Sort the word to get the key
+//     const key = word.split('').sort().join('');
+
+//     // If the key is not in the map, initialize it
+//     if (!map[key]) {
+//       map[key] = [];
+//     }
+
+//     // Push the word into the correct group
+//     map[key].push(word);
+//   }
+
+//   // Return all the grouped values as an array
+//   return Object.values(map);
+// }
+
+// const input = ["eat", "tea", "tan", "ate", "nat", "bat"];
+// const result = groupAnagrams(input);
+// console.log(result);
+
+/**  
+    *****************************
+    44. 
+    ****************************
+ */
 // Given a sorted array arr[] of n numbers and another number target, the task is to check whether or not there exist two elements in arr[] whose sum is exactly target.if present return those elements indexes else return -1. You can assume that each input would have exactly one solution, and you may not use the same element twice.
 
 // 	Examples:
