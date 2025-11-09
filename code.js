@@ -785,3 +785,47 @@
 // 	Examples:
 // arr = [2,6,8,9] , target = 10, output: [0,2]
 // arr = [2,6,8,9] , target = 20, output: -1
+
+/**  
+    *****************************
+    45. product of array except self (leetcode)
+        example -> input: [1,2,3,4], output: [24,12,8,6]
+        I: number[] - num
+        O: number[] - product of all element except for itself 
+        C: O(N), cannot use division 
+    ****************************
+ */
+
+/* nums = [1, 2, 3, 4]
+ leftProduct = [1, 1, 2, 6]
+ rightProduct = [24, 12, 4, 1]
+ solutionArray = [24, 12, 8, 6];
+*/
+// function productExceptSelf(nums) {
+//   let leftProduct = [];
+//   let rightProduct = [];
+//   let solutionArray = [];
+//   // populate left product
+//   for (let i = 0; i < nums.length; i++) {
+//     if (leftProduct.length === 0) {
+//       leftProduct.push(1);
+//     } else {
+//       leftProduct.push(leftProduct[i - 1] * nums[i - 1]);
+//     }
+//   }
+//   // populate right product
+//   for (let i = nums.length - 1; i > -1; i--) {
+//     if (rightProduct.length === 0) {
+//       rightProduct.push(1);
+//     } else {
+//       rightProduct.unshift(rightProduct[0] * nums[i + 1]);
+//     }
+//   }
+//   // populate solution
+//   for (let i = 0; i < leftProduct.length; i++) {
+//     solutionArray.push(leftProduct[i] * rightProduct[i]);
+//   }
+//   return solutionArray;
+// }
+// const input = [1, 2, 3, 4];
+// console.log(productExceptSelf(input));
