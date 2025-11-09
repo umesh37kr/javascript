@@ -580,21 +580,23 @@
 // ****************************
 // 33. count the occurrences of characters in a string and format the output as required ("3a2b1c" for "aaabbc"):
 // ****************************
-// function countChar(str) {
-//   let result = "";
-//   let count = 1;
-//   for (let i = 0; i < str.length; i++) {
-//     if (str[i] === str[i + 1]) {
-//       count++;
-//     } else {
-//       result += count + str[i];
-//       count = 1;
+// function charCount(str){
+//     const obj = {}
+//     str.split('').forEach((char) => {
+//         if(!obj[char]){
+//             obj[char] = 1
+//         }else{
+//             obj[char]++
+//         }
+//     })
+//     let result = ''
+//     for(let char in obj){
+//         result = result+obj[char]+char
 //     }
-//   }
-//   return result;
+//     return result
 // }
-// let str = "aaabbc"; //op- 3a2b1c
-// console.log(countChar(str));
+// console.log(charCount('aaabbc'))
+
 
 // ****************************
 // 34. swap 2 variable without Temp
