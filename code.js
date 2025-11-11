@@ -597,7 +597,6 @@
 // }
 // console.log(charCount('aaabbc'))
 
-
 // ****************************
 // 34. swap 2 variable without Temp
 // ****************************
@@ -831,3 +830,29 @@
 // }
 // const input = [1, 2, 3, 4];
 // console.log(productExceptSelf(input));
+
+/**  
+    *****************************
+    46. write a javascript function for below input output
+    findPairs([1, 2, 3, 4, 3, 5], 6)
+    should return [(1, 5), (2, 4), (3, 3)]
+    ****************************
+ */
+// function findPairs(arr, target){
+//     const seen = new Set();
+//     const pairs = [];
+
+//     for(let num of arr){
+//         const complement = target - num;
+//         if(seen.has(complement)){
+//             pairs.push([complement, num])
+//         }else{
+//             seen.add(num)
+//         }
+//     }
+//     return pairs
+// }
+// const result = findPairs([1, 2, 3, 4, 3, 5], 6).map(pair => {
+//     return `(${pair[0]}, ${pair[1]})`
+// }).join(', ')
+// console.log(result)
